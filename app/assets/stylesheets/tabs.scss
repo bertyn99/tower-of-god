@@ -1,0 +1,92 @@
+
+body {
+    background: #CCD1D9;
+    
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 80%;
+    color: #333;
+    text-align: justify;
+    line-height: normal;
+    
+    -webkit-font-smoothing: antialiased;
+  }
+ 
+  ::selection { background: transparent; }
+  /* TABS FRAME */
+  .tabs-frame {
+    position: absolute;
+    top: -50%; left: 0; right: 0; bottom: 0;
+    width: 250px; height: 50px; /* ADD 50px TO WIDTH FOR EVERY TAB */
+    margin: auto;
+    display: block;
+  }
+  /* TABS */
+  .tabs-frame .tab {
+    position: relative;
+    float: left;
+    width: 50px; height: 50px;
+    display: block;
+  }
+  /* TABS RADIO */
+  .tabs-frame .tab .radio { display: none; }
+  .tabs-frame .tab .tab-button {
+    cursor: pointer;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 50px; height: 20px;
+    margin: auto;
+    border-radius: 100%;
+    border: 0 double #FFF;
+    background: #FFF;
+    display: block;
+    
+    -webkit-transition: .15s linear;
+  }
+  .tabs-frame .tab .radio:checked + .tab-button {
+    border: 6px double #FFF;
+    background: #0a4b6ebd;
+  }
+  .tabs-frame .tab .tab-button:hover {
+    background: #0a4b6ebd;
+  }
+  /* TABS FRAME */
+  .tabs-frame .tab .tab-frame {
+    position: absolute;
+    top: 100%; left: -376px;
+    width: 800px;
+    border-radius: 5px;
+    background: #FFF;
+    display: block;
+    opacity: 0.2;
+    visibility: hidden;
+    z-index: 0;
+    
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .3);
+    
+    -webkit-transition: opacity .3s linear,
+                        -webkit-transform .3s linear;
+    
+    -webkit-transform: rotate(-45deg) translate(25%, -25%);
+  }
+  .tabs-frame .tab .tab-frame:before {
+    content: '';
+    position: absolute;
+    top: -6px; left: 0; right: 0;
+    width: 0; height: 0;
+    margin: auto;
+    border-width: 0 6px 6px;
+    border-style: solid;
+    border-color: transparent transparent #FFF;
+    display: block;
+  }
+  .tabs-frame .tab .radio:checked ~ .tab-button ~ .tab-frame {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+    
+    -webkit-transform: rotate(0deg) translate(0, 0);  
+  }
+  .tabs-frame .tab .tab-frame p {
+    padding: 0 20px; margin: 20px 0;
+  }
+
