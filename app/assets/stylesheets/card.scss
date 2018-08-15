@@ -1,0 +1,50 @@
+.roundedImage2 {
+    border: 2px solid rgba(17, 80, 196, 0.207);
+    border-radius:50px;
+    width:60px;
+    height:60px;
+    margin-left: 5px;
+}
+.cards {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-between;
+    background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 50%), asset_url('Wiki-background.jpg');
+    background-size: cover;
+    box-shadow: 0px 1px 20px 8px rgba(0,0,0,0.7);
+  }
+  
+  .card {
+    background-image: asset_url('element.jpg');
+    height: 280px;
+    width: 200px;
+    background-size: cover;
+    margin: 40px 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px 5px rgba(0,0,0,0.4);
+    transition: box-shadow ease-in 0.2s;
+    transition: padding ease-in 0.2s;
+  }
+  
+  .card:hover {
+    transition: padding cubic-bezier(0.36, 0.98, 0.65, 1.25) 0.4s;
+    box-shadow: 0 8px 20px 10px rgba(0,0,0,0.8);
+    padding: 0 100px;
+  }
+  
+  .card h2 {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 120px;
+  }
+  
+  .card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: relative;
+    top: 100px;
+    left: 50px;
+  }
