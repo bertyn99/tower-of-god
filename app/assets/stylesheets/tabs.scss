@@ -1,3 +1,16 @@
+.scanImage{
+  border: 2px solid rgba(17, 80, 196, 0.207);
+  border-radius:10px;
+  width:35%;
+  height:48%;
+  margin-left: 5px;
+  
+}
+
+.resume{
+  display: block;
+ 
+}
 
 body {
     background: #CCD1D9;
@@ -19,6 +32,7 @@ body {
     width: 250px; height: 50px; /* ADD 50px TO WIDTH FOR EVERY TAB */
     margin: auto;
     display: block;
+    text-align: left;
   }
   /* TABS */
   .tabs-frame .tab {
@@ -26,6 +40,7 @@ body {
     float: left;
     width: 50px; height: 50px;
     display: block;
+    text-align: left;
   }
   /* TABS RADIO */
   .tabs-frame .tab .radio { display: none; }
@@ -37,7 +52,7 @@ body {
     margin: auto;
     border-radius: 100%;
     border: 0 double #FFF;
-    background: #FFF;
+    background: rgb(100, 95, 95);
     display: block;
     
     -webkit-transition: .15s linear;
@@ -55,12 +70,12 @@ body {
     top: 100%; left: -376px;
     width: 800px;
     border-radius: 5px;
-    background: #FFF;
+    background: rgb(21, 75, 82);
     display: block;
     opacity: 0.2;
     visibility: hidden;
     z-index: 0;
-    
+    text-align: left;
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .3);
     
     -webkit-transition: opacity .3s linear,
@@ -76,8 +91,9 @@ body {
     margin: auto;
     border-width: 0 6px 6px;
     border-style: solid;
-    border-color: transparent transparent #FFF;
+    border-color: transparent transparent rgb(23, 87, 156);
     display: block;
+    text-align: left;
   }
   .tabs-frame .tab .radio:checked ~ .tab-button ~ .tab-frame {
     opacity: 1;

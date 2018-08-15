@@ -1,24 +1,15 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+Bonjour à toi, le groupe THP de Nantes te propose un rendu de son exercice sur le CSS
+Si tu veux essayer en local, toujours la même chose :
+  - git clone https://github.com/FloLeh/Francis-Lalanne
+  - rails db:create
+  - rails s
 
-* Ruby version
+# Quel est notre site?
+Il s'agit d'un site sur le manwha Tower of god
 
-* System dependencies
+#Si vous voulez voir notre beau site en ligne suivez ce lien
+https://tower-of-god.herokuapp.com/
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
